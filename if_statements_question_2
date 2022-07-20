@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+month = input("Enter a month of the year: ")
+m = month.capitalize()
+if m == "February":
+    print("The month of {} has 28 or 29 days.".format(m))
+elif m in ["January", "March", "May", "July", "August", "October", "December"]:
+    print("The month of {} has 31 days.".format(m))
+elif m in ["April", "June", "September", "November"]:
+    print("The month of {} has 30 days.".format(m))
